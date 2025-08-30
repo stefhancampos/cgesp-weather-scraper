@@ -1,20 +1,20 @@
-name: CGESP Weather Scraper
-description: Scrapes weather data from CGESP website using browser automation
-version: "2.1.0"
-slug: cgesp_weather_scraper
-arch:
-  - aarch64
-  - amd64
-  - armhf
-  - armv7
-init: false
-options:
-  station_code: "1000840"
-  scan_interval: 3600
-  ha_url: "http://supervisor/core"
-  ha_token: ""
-schema:
-  station_code: "str"
-  scan_interval: "int(300,86400)"
-  ha_url: "str"
-  ha_token: "str"
+{
+  "name": "CGESP Weather Scraper",
+  "description": "Scrapes weather data from CGESP website using browser automation",
+  "version": "2.1.0",
+  "slug": "cgesp_weather_scraper",
+  "arch": ["aarch64", "amd64", "armhf", "armv7"],
+  "init": false,
+  "options": {
+    "station_code": "1000840",
+    "scan_interval": 3600,
+    "ha_url": "http://supervisor/core",
+    "ha_token": ""
+  },
+  "schema": {
+    "station_code": "str",
+    "scan_interval": "int(300,86400)",
+    "ha_url": "str",
+    "ha_token": "str"
+  }
+}
